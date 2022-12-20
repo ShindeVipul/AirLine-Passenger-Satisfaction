@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <style>
+        .center {
+          margin: auto;
+          width: 50%;
+          border: 5px solid #161615;
+          padding: 10px;
+        }
+        .title {
+          margin: auto;
+          width: 100%;
+          border: 10px solid #161615;
+          padding: 5px;
+        }
+        </style>
+        </head>
+    <body bgcolor="	#A9A9A9">
+
+        <center>
+        
+            <div class="title">
+                <h1 style="color:black;"><i>AIRLINE PASSENGER SATISFACTION</i></h1>  
+              </div>
+
+         <h2 style="color: red;"> ENTER YOUR DETAILS</h2>
+         
+        <form action="{{url_for('predict')}}", method="POST">
+            <div class="center">
+                GENDER : <input type="text" name="gender"><br><br>
+                AGE : <input type="text" name="Age_Group"><br><br>
+                CUSTOMER TYPE : <input type="text" name="customer_type"><br><br>
+                TYPE OF TRAVEL : <input type="text" name="Type_of_Travel"><br><br>
+                CLASS : <input type="text" name="Class"><br><br>
+                FLIGHT DISTANCE : <input type="text" name="Flight_Distance"><br><br>
+                INFLIGHT WIFI SERVICE : <input type="text" name="Inflight_wifi_service"><br><br>
+                DEPARTURE ARRIVAL TIME CONVENIENT : <input type="text" name="DepartureArrival_time_convenient"><br><br>
+                EASE OF ONLINE BOOKING : <input type="text" name="Ease_of_Online_booking"><br><br>
+                GATE LOCATION : <input type="text" name="Gate_location"><br><br>
+                FOOD AND DRINK : <input type="text" name="Food_and_drink"><br><br>
+                ONLINE BOARDING : <input type="text" name="Online_boarding"><br><br>
+                SEAT COMFORT : <input type="text" name="Seat_comfort"><br><br>
+                INFLIGHT ENTERTAINMENT : <input type="text" name="Inflight_entertainment"><br><br>
+                ON BOARD SERVICE : <input type="text" name="On_board_service"><br><br>
+                LEG-ROOM SERVICE : <input type="text" name="Leg_room_service"><br><br>
+                BAGGAGE HANDLING : <input type="text" name="Baggage_handling"><br><br>
+                CHECK-IN SERVICE : <input type="text" name="Checkin_service"><br><br>
+                INFLIGHT SERVICE : <input type="text" name="Inflight_service"><br><br>
+                CLEANLINESS : <input type="text" name="Cleanliness"><br><br>
+                DEPARTURE DELAY (MIN) : <input type="text" name="Departure_Delay_in_Minutes"><br><br>
+                ARRIVAL DELAY (MIN) : <input type="text" name="Arrival_Delay_in_Minutes"><br><br></b>
+              </div><br>
+
+            <input type="submit", value="PREDICT">
+
+
+        </form>
+    </center>
+    
+    </body>
+</html>
